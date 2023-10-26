@@ -81,7 +81,7 @@ return fs.writeFileSync(path.join(process.cwd(), fileName),data)}
 function init() {
     inquirer.prompt(questions).then((responses)=>{
         console.log('creating readme');
-        writeToFile('./Readme-generator/README.md',generateMarkdown({...responses}))
+        writeToFile('./README.md',generateMarkdown({...responses}))
     })
 }
 
