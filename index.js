@@ -49,7 +49,7 @@ const questions = [ {
 {
     type:"checkbox",
     message: "What License are you using?",
-    name:"License",
+    name:"license",
     choices:['AFL-3.0','Apache-2.0','MPL-2.0','Artistic-2.0','MIT', 'none'],
     validate:(value)=>{if(value){return true}else {return'input needed'}}
 },
@@ -69,6 +69,11 @@ const questions = [ {
     type:"input",
     message: "What is your email?",
     name:"email",
+    validate:(value)=>{if(value){return true}else {return'input needed'}}
+},{
+    type:"input",
+    message: "who contributed? what did they do?",
+    name:"contribution",
     validate:(value)=>{if(value){return true}else {return'input needed'}}
 }
 ];
